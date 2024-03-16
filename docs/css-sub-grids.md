@@ -85,5 +85,3 @@ Subgrid opens exciting creative avenues for web design. Here are some inspiratio
 **Wrapping Up**
 
 CSS subgrid empowers you to craft intricate and responsive layouts with ease. Embrace subgrid's power to streamline your workflow, organize your code, and create stunning user interfaces.
-
-Feel free to share your subgrid experiences and experiment with this fantastic feature. Happy grid nesting!
