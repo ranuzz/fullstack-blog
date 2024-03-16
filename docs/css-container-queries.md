@@ -1,0 +1,114 @@
+---
+title: "Harnessing the Power of CSS Container Queries: A Developer's Guide"
+sidebar_position: 2
+---
+
+**Introduction**
+
+Remember battling media queries to make different parts of your website responsive to various screen sizes? Well, CSS container queries are here to change the game. These powerful queries let you style elements based on the size of their _parent container_ rather than the overall viewport. This unlocks an unprecedented level of component-driven design flexibility.
+
+In this blog, we'll unravel the magic of CSS container queries and showcase their potential with practical examples.
+
+**What are CSS Container Queries?**
+
+Think of container queries as the sibling of media queries, but with a focused superpower. Where media queries ask, "how big is the viewport?", container queries ask, "how big is my container?". This distinction lets you create truly reusable components that adapt seamlessly to their surroundings.
+
+**Setting the Stage**
+
+Before we dive into code, we need to do two things:
+
+1. **Establish a Container:** To use container queries, a parent element needs to be a containment context. Use the `contain` property:
+
+   ```css
+   .card-container {
+     contain: size layout; /* size for size queries, layout for re-layout */
+   }
+   ```
+
+2. **Write the Container Query:** The `@container` rule is where the magic happens:
+   ```css
+   @container (min-width: 700px) {
+     /* Styles for when the container is at least 700px wide */
+   }
+   ```
+
+**Example 1: The Responsive Card Component**
+
+Let's create a classic card component that morphs its layout based on available space.
+
+**HTML:**
+
+```html
+<div class="card-container">
+  <img src="image.jpg" alt="Card Image" />
+  <div class="card-content">
+    <h2>Card Title</h2>
+    <p>Some interesting card description.</p>
+  </div>
+</div>
+```
+
+**CSS:**
+
+```css
+.card-container {
+  contain: size layout;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+@container (min-width: 500px) {
+  .card-container {
+    display: flex;
+  }
+
+  .card-image {
+    width: 30%;
+  }
+}
+```
+
+**Explanation:**
+
+- When the `.card-container` is narrow, the image and content stack vertically.
+- Once the container surpasses 500px, they align side-by-side in a flex layout.
+
+**Example 2: Dynamic Typography**
+
+Adjusting font sizes within components is a classic container query use-case.
+
+**CSS:**
+
+```css
+.article-container {
+  contain: size layout;
+}
+
+.article-title {
+  font-size: 24px;
+}
+
+@container (min-width: 800px) {
+  .article-title {
+    font-size: 36px;
+  }
+}
+```
+
+**Browser Support**
+
+Container Queries enjoy excellent support across modern browsers (check out [https://caniuse.com/css-container-queries](https://caniuse.com/css-container-queries) for the latest details).
+
+**Tips and Considerations**
+
+- **Naming:** Use `container-name` to clarify queries if you have multiple containers on a page.
+- **Progressive Enhancement:** Ensure your design functions with basic styles before container query enhancements kick in.
+- **Performance:** Be mindful when applying complex styles within container queries, potential for layout thrashing.
+
+**The Future of Responsive Design**
+
+CSS container queries are a pivotal addition to a web developer's toolkit. They promote component-based thinking, simplify responsive layouts, and lead to more maintainable and scalable stylesheets. Embrace the potential of container-driven design!
+
+Let me know if you have any specific scenarios in mind, and I'd be happy to whip up some custom tailored container query examples.
