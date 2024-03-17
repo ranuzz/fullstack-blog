@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'FullStack by CodeJam',
-  tagline: 'AI generated blogs for developers.',
+  title: 'FullStack by Codejam',
+  tagline: 'AI generated blogs and documentaions for developers.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -45,6 +45,12 @@ const config = {
           // Remove this to remove the "edit this page" links.
           // editUrl:
         },
+        blog: {
+          showReadingTime: true,
+          blogTitle: 'Fullstack blog',
+          blogDescription: 'AI generated blogs for developers',
+          postsPerPage: 'ALL'
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -58,7 +64,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/logo.png',
       navbar: {
-        title: 'FullStack by CodeJam',
+        title: 'FullStack by Codejam',
         logo: {
           alt: 'Codejam logo',
           src: 'img/logo.png',
@@ -68,8 +74,9 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'docsSidebar',
             position: 'left',
-            label: 'Blogs',
+            label: 'Docs',
           },
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/ranuzz/codejam',
             label: 'GitHub',
@@ -79,7 +86,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} FullStack by CodeJam, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} FullStack by Codejam, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

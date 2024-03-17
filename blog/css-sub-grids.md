@@ -1,9 +1,11 @@
 ---
 title: "Demystifying CSS Subgrid: Unleash Nesting Power in Your Layouts"
-sidebar_position: 3
+tags: [css]
 ---
 
 Greetings, fellow developers! Buckle up for a deep dive into CSS subgrid, a revolutionary feature that elevates grid layouts to a whole new level.
+
+<!-- truncate -->
 
 **What is Subgrid?**
 

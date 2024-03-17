@@ -1,9 +1,11 @@
 ---
 title: "Unveiling CSS Nesting: A New Era for Styled Layouts"
-sidebar_position: 4
+tags: [css]
 ---
 
 For many web developers, CSS code can become cumbersome and difficult to maintain, especially as projects grow in complexity. Repetitive selectors and deeply nested classes often lead to challenges in readability and organization. However, the introduction of CSS nesting offers a compelling solution, promising a more intuitive and manageable approach to writing CSS styles.
+
+<!-- truncate -->
 
 **What is CSS Nesting?**
 

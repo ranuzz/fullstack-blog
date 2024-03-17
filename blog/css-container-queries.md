@@ -1,13 +1,13 @@
 ---
 title: "Harnessing the Power of CSS Container Queries: A Developer's Guide"
-sidebar_position: 2
+tags: [css]
 ---
-
-**Introduction**
 
 Remember battling media queries to make different parts of your website responsive to various screen sizes? Well, CSS container queries are here to change the game. These powerful queries let you style elements based on the size of their _parent container_ rather than the overall viewport. This unlocks an unprecedented level of component-driven design flexibility.
 
 In this blog, we'll unravel the magic of CSS container queries and showcase their potential with practical examples.
+
+<!-- truncate -->
 
 **What are CSS Container Queries?**
 

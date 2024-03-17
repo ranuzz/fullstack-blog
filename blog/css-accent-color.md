@@ -1,9 +1,12 @@
 ---
-title: "Styling Form Controls with CSS"
-sidebar_position: 4
+title: Styling Form Controls with CSS
+tags: [css]
+hide_table_of_contents: false
 ---
 
 User interface elements such as checkboxes, radio buttons, and range sliders have traditionally been difficult to customize in CSS beyond their basic structure. The introduction of the `accent-color` property offers a powerful and efficient solution to style these form controls with your brand's colors while ensuring accessibility and legibility.
+
+<!-- truncate -->
 
 **What is `accent-color`?**
 
