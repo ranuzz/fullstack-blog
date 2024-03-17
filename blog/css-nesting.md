@@ -1,5 +1,5 @@
 ---
-title: "Unveiling CSS Nesting: A New Era for Styled Layouts"
+title: Unveiling CSS Nesting
 tags: [css]
 ---
 

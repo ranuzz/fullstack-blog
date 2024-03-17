@@ -1,5 +1,5 @@
 ---
-title: "Harnessing the Power of CSS Container Queries: A Developer's Guide"
+title: Harnessing the Power of CSS Container Queries
 tags: [css]
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Demystifying CSS Subgrid: Unleash Nesting Power in Your Layouts"
+title: Demystifying CSS Subgrid
 tags: [css]
 ---
 
